@@ -33,6 +33,13 @@
 	color = "#d4c780"
 	extra_details = list("goldstripe")
 
+/obj/item/card/id/torch/gold/astartes
+	desc = "A golden identification card belonging to a member of the Adeptus Astartes."
+	item_state = "gold_id"
+	job_access_type = /datum/job/astartes
+	color = "#d4c780"
+	extra_details = list("goldstripe")
+
 // SolGov Crew and Contractors
 /obj/item/card/id/torch/crew
 	desc = "An identification card issued to SolGov crewmembers aboard the Dauntless."
