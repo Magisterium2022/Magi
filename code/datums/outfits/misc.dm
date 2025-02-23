@@ -78,3 +78,19 @@
 	shoes = /obj/item/clothing/shoes/white
 	suit = /obj/item/clothing/suit/armor/grim/bio_suit/anomaly
 	head = /obj/item/clothing/head/bio_hood/anomaly
+
+/singleton/hierarchy/outfit/tactical
+	name = "Ultramarine Tactical Marine"
+	uniform = /obj/item/clothing/under/astartes/bodysuit
+	shoes = /obj/item/clothing/shoes/jackboots/astartes/smurfs
+	l_ear = /obj/item/device/radio/headset/heads/captain
+	glasses = /obj/item/clothing/glasses/astartes/visor
+	mask = /obj/item/clothing/mask/breath
+	id_slot = slot_wear_id
+	id_types = list(/obj/item/card/id/torch/gold/astartes)
+	suit = /obj/item/clothing/suit/armor/astartes/ultramarine
+	head = /obj/item/clothing/head/helmet/astartes
+	belt = /obj/item/material/twohanded/ravenor/chainsword/astartes
+	s_store = /obj/item/gun/projectile/automatic/boltrifle
+	back = /obj/item/storage/backpack/satchel/astartes
+	backpack_contents = list(/obj/item/ammo_magazine/bolt_rifle_magazine = 3)
