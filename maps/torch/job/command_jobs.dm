@@ -373,3 +373,54 @@
 
 /datum/job/sea/get_description_blurb()
 	return "You are the Senior Enlisted Advisor. You are the highest enlisted person on the ship. You are directly subordinate to the CO. You advise them on enlisted concerns and provide expertise and advice to officers. You are responsible for ensuring discipline and good conduct among enlisted, as well as notifying officers of any issues and \"advising\" them on mistakes they make. You also handle various duties on behalf of the CO and XO. You are an experienced enlisted person, very likely equal only in experience to the CO and XO. You know the regulations better than anyone."
+
+
+/datum/job/astartes
+	title = "Space Marine"
+	supervisors = "the God Emperor and your Chapter Master."
+	minimal_player_age = 4
+	economic_power = 16
+	minimum_character_age = 21
+	ideal_character_age = 50
+	total_positions = 0
+	spawn_positions = 0
+	outfit_type = /singleton/hierarchy/outfit/astartes
+	allowed_branches = list(
+		/datum/mil_branch/civilian
+	)
+	allowed_ranks = list(
+		/datum/mil_rank/civ/civ
+	)
+	skill_points = 11
+	min_skill = list(
+		SKILL_BUREAUCRACY = SKILL_EXPERIENCED,
+		SKILL_FINANCE = SKILL_EXPERIENCED,
+		SKILL_PILOT = SKILL_EXPERIENCED,
+		SKILL_DEVICES = SKILL_EXPERIENCED,
+		SKILL_VIGOR = SKILL_DEMIGOD,
+		SKILL_GUNS = SKILL_PRIMARIS,
+		SKILL_COMBAT = SKILL_PRIMARIS,
+	)
+	access = list(
+		access_dauntless, access_restricted, access_restricted_command, access_mechanicus, access_mechanicus_command, access_medical,
+		access_medical_command, access_bridge, access_roguetrader)
+
+	max_skill = list(	SKILL_BUREAUCRACY = SKILL_MASTER,
+						SKILL_FINANCE = SKILL_MASTER,
+						SKILL_DEVICES = SKILL_MASTER,
+						SKILL_VIGOR = SKILL_DEMIGOD,
+						SKILL_GUNS = SKILL_PRIMARIS,
+						SKILL_COMBAT = SKILL_PRIMARIS,
+						SKILL_PILOT = SKILL_MASTER)
+
+	software_on_spawn = list(/datum/computer_file/program/comm,
+							 /datum/computer_file/program/card_mod,
+							 /datum/computer_file/program/power_monitor,
+							 /datum/computer_file/program/supermatter_monitor,
+							 /datum/computer_file/program/alarm_monitor,
+							 /datum/computer_file/program/camera_monitor,
+							 /datum/computer_file/program/shields_monitor,
+							 /datum/computer_file/program/reports,
+							 /datum/computer_file/program/deck_management)
+/datum/job/astartes/get_description_blurb()
+	return "You are a Space Marine, one of the Adeptus Astartes, beholden only to the God-Emperor and your Chapter-Master."
