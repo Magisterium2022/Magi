@@ -247,6 +247,14 @@
 /obj/item/cell/hyper/empty
 	charge = 0
 
+/obj/item/cell/infinite/eldar
+	name = "Aeldari Power Cell"
+	desc = "A mysterious battery, this seems to generate energy through Psychic resonance alone."
+	origin_tech = list(TECH_POWER = 3)
+	icon_state = "hpcell"
+	maxcharge = 4000
+	matter = list(MATERIAL_STEEL = 700, MATERIAL_GLASS = 80, MATERIAL_ALUMINIUM = 20)
+
 /obj/item/cell/infinite
 	name = "xenos archeotech power cell"
 	desc = "This special experimental power cell has both very large capacity, and ability to recharge itself by draining power from contained bluespace pocket."
@@ -261,6 +269,13 @@
 /obj/item/cell/infinite/use(amount)
 	return amount
 
+/obj/item/cell/infinite/eldar
+	name = "Aeldari Power Cell"
+	desc = "A mysterious battery, this seems to generate energy through Psychic resonance alone."
+	origin_tech = list(TECH_POWER = 3)
+	icon_state = "icell"
+	maxcharge = 5000
+	matter = list(MATERIAL_STEEL = 700, MATERIAL_GLASS = 80, MATERIAL_ALUMINIUM = 20)
 
 /obj/item/cell/potato
 	name = "potato battery"
