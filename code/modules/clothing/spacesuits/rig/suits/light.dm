@@ -289,9 +289,7 @@
 	aimove_power_usage = 0
 	chest_type = /obj/item/clothing/suit/space/rig/light/ninja/eldar
 	glove_type = /obj/item/clothing/gloves/rig/light/ninja/eldar
-	cell_type =  /obj/item/cell/hyper/eldar
-
-	req_access = list(access_syndicate)
+	cell_type =  /obj/item/cell/infinite/eldar
 
 	initial_modules = list(
 		/obj/item/rig_module/stealth_field,
@@ -303,3 +301,12 @@
 		/obj/item/rig_module/cooling_unit,
 		/obj/item/rig_module/maneuvering_jets
 		)
+
+/obj/item/clothing/gloves/rig/light/ninja/eldar
+	name = "insulated gloves"
+	siemens_coefficient = 0
+	species_restricted = list(SPECIES_ELDAR)
+
+/obj/item/clothing/suit/space/rig/light/ninja/eldar
+	breach_threshold = 38 //comparable to regular hardsuits
+	species_restricted = list(SPECIES_ELDAR)
