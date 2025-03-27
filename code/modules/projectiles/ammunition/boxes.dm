@@ -957,3 +957,21 @@
 
 /obj/item/ammo_magazine/box/minigun/empty
 	initial_ammo = 0
+
+/obj/item/ammo_magazine/catapult_magazine
+	name = "Shuriken Catapult Magazine"
+	icon_state = "ersatz"
+	mag_type = MAGAZINE
+	ammo_type = /obj/item/ammo_casing/shuriken
+	caliber = CALIBER_ELDAR
+	max_ammo = 1000
+	multiple_sprites = 0
+
+/obj/item/ammo_magazine/spistol_magazine
+	name = "Shuriken Pistol Magazine"
+	icon_state = "ersatz"
+	mag_type = MAGAZINE
+	ammo_type = /obj/item/ammo_casing/shuriken/pistol
+	caliber = CALIBER_ELDAR
+	max_ammo = 60
+	multiple_sprites = 0
