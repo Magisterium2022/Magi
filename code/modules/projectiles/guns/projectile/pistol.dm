@@ -205,7 +205,7 @@
 	force = 15
 	slot_flags = SLOT_BACK|SLOT_S_STORE|SLOT_BELT
 	max_shells = 60
-	caliber = "shuriken"
+	caliber = CALIBER_ELDAR
 	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 3, TECH_ILLEGAL = 3)
 	ammo_type = /obj/item/ammo_casing/shuriken/pistol
 	one_hand_penalty = 0 //Eldar magic
