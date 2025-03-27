@@ -269,3 +269,37 @@
 		/obj/item/rig_module/stealth_field,
 		/obj/item/rig_module/vision
 		)
+
+/obj/item/rig/light/ninja/eldar
+	name = "Eldar Ranger Armour"
+	desc = "A unique, vaccum-proof suit of nano-enhanced armor designed specifically for assassins."
+	suit_type = "ominous"
+	icon_state = "ninja_rig"
+	armor = list(
+		melee = ARMOR_MELEE_CARAPACE,
+		bullet = ARMOR_BALLISTIC_CARAPACE,
+		laser = ARMOR_LASER_CARAPACE,
+		energy = ARMOR_ENERGY_RESISTANT,
+		bomb = ARMOR_BOMB_THIRTY,
+		bio = ARMOR_BIO_SHIELDED
+		) //Wraithbone's pretty great for armour.
+	siemens_coefficient = 0.2 //heavy hardsuit level shock protection
+	emp_protection = 30
+	online_slowdown = 0
+	aimove_power_usage = 0
+	chest_type = /obj/item/clothing/suit/space/rig/light/ninja/eldar
+	glove_type = /obj/item/clothing/gloves/rig/light/ninja/eldar
+	cell_type =  /obj/item/cell/hyper/eldar
+
+	req_access = list(access_syndicate)
+
+	initial_modules = list(
+		/obj/item/rig_module/stealth_field,
+		/obj/item/rig_module/vision,
+		/obj/item/rig_module/voice,
+		/obj/item/rig_module/fabricator,
+		/obj/item/rig_module/datajack,
+		/obj/item/rig_module/self_destruct,
+		/obj/item/rig_module/cooling_unit,
+		/obj/item/rig_module/maneuvering_jets
+		)
